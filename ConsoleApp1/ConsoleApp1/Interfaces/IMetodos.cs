@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    interface IAtaques
+    public interface IMetodos
     {
+        void Mover();
         void A_Especial();
         void A_Normal();    
     }

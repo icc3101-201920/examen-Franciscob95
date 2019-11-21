@@ -10,5 +10,12 @@ namespace ConsoleApp1
     {
         private int id;
         private bool active;
+        private List<Embarcacion> embarcaciones;
+        public Player(int id, bool active, List<Embarcacion> embarcaciones)
+        {
+            this.id = id;
+            this.active = active;
+            this.embarcaciones = embarcaciones;
+        }
     }
 }
