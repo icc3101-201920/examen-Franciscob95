@@ -53,12 +53,49 @@ namespace ConsoleApp1
             Console.WriteLine("Desea posicionar horizontal o vertical? (H o V)");
             string dir = Console.ReadLine();
 
-
-            for (i = 0; i < 10; i++)
+            if (dir == "H")
             {
-                for (j = 0; j < 10; j++)
+                for (i = 0; i < 10; i++)
                 {
-
+                    for (j = 0; j < 10; j++)
+                    {
+                        if ((i==cooX) & (j == cooY))
+                        {
+                            posicion[i, j] = 1;
+                            if ((i<7) & (i>3))
+                            {
+                                posicion[i+1, j] = posicion[i + 2, j] = posicion[i + 3, j] = 1;
+                            }
+                            else
+                            {
+                                posicion[i - 1, j] = posicion[i - 2, j] = posicion[i - 3, j] = 1;
+                            }
+                        }
+                    }
+                }
+            }
+            if (dir == "V")
+            {
+                for (i = 0; i < 10; i++)
+                {
+                    for (j = 0; j < 10; j++)
+                    {
+                        if ((i == cooX) & (j == cooY))
+                        {
+                            if ((i == cooX) & (j == cooY))
+                            {
+                                posicion[i, j] = 1;
+                                if ((j < 7) & (j > 3))
+                                {
+                                    posicion[i, j+1] = posicion[i, j+2] = posicion[i, j+3] = 1;
+                                }
+                                else
+                                {
+                                    posicion[i, j - 1] = posicion[i, j - 2] = posicion[i, j - 3] = 1;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     class Radar : Embarcacion, IMetodos
     {
-        public int[,] posicion;
+        private int[,] posicion;
         public Radar()
         {
             Name = "Radar";
@@ -37,5 +37,29 @@ namespace ConsoleApp1
         {
             throw new NotImplementedException();
         }
+        private void Posicionar()
+        {
+            int i, j;
+            Console.WriteLine("Indique la posicion X donde quiere ubicar su embarcación: ");
+            int cooX = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indique la posicion Y donde quiere ubicar su embarcación: ");
+            int cooY = Convert.ToInt32(Console.ReadLine());
+
+            for (i = 0; i < 10; i++)
+            {
+                for (j = 0; j < 10; j++)
+                {
+                    if ((i == cooX) & (j == cooY))
+                    {
+                        if ((i == cooX) & (j == cooY))
+                        {
+                            posicion[i, j] = 1;
+                        }
+                    }
+                }
+            }
+            
+        }
     }
 }
+
