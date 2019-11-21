@@ -28,10 +28,7 @@ namespace ConsoleApp1
             throw new NotImplementedException();
         }
 
-        public void A_Normal()
-        {
-            throw new NotImplementedException();
-        }
+
 
         public void Mover()
         {

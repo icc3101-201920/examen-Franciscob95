@@ -9,7 +9,6 @@ namespace ConsoleApp1
     public interface IMetodos
     {
         void Mover();
-        void A_Especial();
-        void A_Normal();    
+        void A_Especial();    
     }
 }

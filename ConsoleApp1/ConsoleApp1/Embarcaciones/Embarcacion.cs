@@ -38,5 +38,23 @@ namespace ConsoleApp1
                 this.lifePoints = value;
             }
         }
+
+        public void A_Normal(int [,] enemy)
+        {
+            int i, j;
+            Console.WriteLine("Indique la posicion X donde quiere atacar: ");
+            int cooX = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indique la posicion Y donde quiere atacar: ");
+            int cooY = Convert.ToInt32(Console.ReadLine());
+
+            if (enemy[cooX, cooY] == 1)
+            {
+                Console.WriteLine("Fuego");
+            }
+            else
+            {
+                Console.WriteLine("Agua");
+            }
+        }
     }
 }
