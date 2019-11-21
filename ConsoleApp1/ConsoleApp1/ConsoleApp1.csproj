@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game.cs" />
+    <Compile Include="Interfaces\IAtaques.cs" />
+    <Compile Include="Embarcaciones\Embarcacion.cs" />
+    <Compile Include="Embarcaciones\Fragata.cs" />
+    <Compile Include="Embarcaciones\Portaaviones.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Embarcaciones\Radar.cs" />
+    <Compile Include="Embarcaciones\Reparador.cs" />
+    <Compile Include="Embarcaciones\Submarino.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
