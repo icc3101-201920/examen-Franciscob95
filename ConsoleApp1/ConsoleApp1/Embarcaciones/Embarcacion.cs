@@ -38,17 +38,5 @@ namespace ConsoleApp1
                 this.lifePoints = value;
             }
         }
-        private void Posicionar(int[,] pos)
-        {
-            int i, j;
-            Console.Write("Indique la posicion donde quiere ubicar su embarcación: ");
-            for (i = 0; i < 10; i++)
-                {
-                    for (j = 0; j < 10; j++)
-                    {
-                        pos[i, j] = Convert.ToInt32(Console.ReadLine());
-                    }
-                }
-        }
     }
 }
