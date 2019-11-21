@@ -29,7 +29,6 @@ namespace ConsoleApp1
             }
         }
 
-
         public void A_Especial()
         {
             throw new NotImplementedException();
@@ -51,6 +50,10 @@ namespace ConsoleApp1
             int cooX = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Indique la posicion Y donde quiere ubicar su embarcación: ");
             int cooY = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Desea posicionar horizontal o vertical? (H o V)");
+            string dir = Console.ReadLine();
+
+
             for (i = 0; i < 10; i++)
             {
                 for (j = 0; j < 10; j++)
